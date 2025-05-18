@@ -100,34 +100,7 @@
       margin: 0 auto;
     }
 
-    /* Стилі для початкової сторінки */
-    .home-section {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg') center/cover no-repeat;
-      color: #fff;
-      padding: 5rem 1rem;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .home-content {
-      text-align: center;
-      max-width: 800px;
-    }
-
-    .home-content h1 {
-      font-size: 3rem;
-      color: #fff;
-      margin-bottom: 1rem;
-    }
-
-    .home-content p {
-      font-size: 1.2rem;
-      color: #e0e0e0;
-      margin-bottom: 2rem;
-    }
-
+    /* Стилі для кнопки CTA */
     .cta-button {
       display: inline-block;
       padding: 0.75rem 1.5rem;
@@ -136,11 +109,29 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: 500;
+      margin-top: 1.5rem;
       transition: background 0.3s ease;
     }
 
     .cta-button:hover {
       background: #0088cc;
+    }
+
+    /* Стилі для оригінального розділу "Про мене" */
+    .about-section .hero-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .about-section .hero-content h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .about-section .hero-content p {
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      color: #333;
     }
 
     .gallery {
@@ -240,17 +231,12 @@
         align-items: center;
       }
 
-      .hero-content h1,
-      .home-content h1 {
+      .hero-content h1 {
         font-size: 2rem;
       }
 
       .gallery {
         grid-template-columns: 1fr;
-      }
-
-      .home-section {
-        padding: 3rem 1rem;
       }
     }
 
@@ -259,18 +245,20 @@
         font-size: 1.2rem;
       }
 
-      .hero-content h1,
-      .home-content h1 {
+      .hero-content h1 {
         font-size: 1.8rem;
       }
 
-      .hero-content p,
-      .home-content p {
+      .hero-content p {
         font-size: 1rem;
       }
 
       form {
         padding: 0 1rem;
+      }
+
+      .about-section .hero-content h1 {
+        font-size: 1.6rem;
       }
 
       .cta-button {
@@ -294,16 +282,16 @@
 </header>
 
 <!-- Початкова сторінка -->
-<section id="home" class="section home-section active">
-  <div class="home-content">
+<section id="home" class="section active">
+  <div class="hero-content">
     <h1>Ласкаво просимо!</h1>
-    <p>Я Антон  — спортсмен. Дізнайтесь більше про мої захоплення та зв’яжіться зі мною!</p>
+    <p>Я Антон Коцур — спортсмен, творча душа та ентузіаст. Від змішаних єдиноборств і гірського велоспорту до чайних церемоній і дизайну одягу — я знаходжу натхнення в русі, гармонії та стилі. Дізнайтесь більше про мої захоплення та зв’яжіться зі мною!</p>
     <a href="#" onclick="showSection('about')" class="cta-button">Дізнатися більше</a>
   </div>
 </section>
 
-<!-- Секція Про мене -->
-<section id="about" class="section">
+<!-- Секція Про мене (оригінальний вигляд) -->
+<section id="about" class="section about-section">
   <div class="hero-content">
     <h1>Привіт, я Антон!</h1>
     <p>Коцур Антон Сергійович — учень, який поєднує в собі силу, витривалість та творчість. Любительськи займається змішаними єдиноборствами (ММА) і захоплюється гірським велоспортом, де кожна перемога — це результат неймовірної праці та наполегливості.
